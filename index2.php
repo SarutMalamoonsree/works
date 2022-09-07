@@ -25,6 +25,11 @@
         <li><a href="post.php?id=3">กระทู้ที่ 3</a></li>
         <li><a href="post.php?id=4">กระทู้ที่ 4</a></li>
         <li><a href="post.php?id=5">กระทู้ที่ 5</a></li>
+        <li><a href="post.php?id=6">กระทู้ที่ 6</a></li>
+        <li><a href="post.php?id=7">กระทู้ที่ 7</a></li>
+        <li><a href="post.php?id=8">กระทู้ที่ 8</a></li>
+        <li><a href="post.php?id=9">กระทู้ที่ 9</a></li>
+        <li><a href="post.php?id=10">กระทู้ที่ 10</a></li>
    </ul>
 </body>
 </html>

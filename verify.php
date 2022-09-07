@@ -10,9 +10,17 @@
     <h1 style="text-align: center;">MY WEBBOARD</h1>
     <hr>
     <div align="center">
-    เข้าสู่ระบบด้วย<br>
-    Login = <?php echo $_POST["ID"]; ?><br>
-    Password = <?php echo $_POST["Password"]; ?>
+    <?php 
+     $id = $_POST["ID"]; 
+     $pass = $_POST["Password"];
+     if($id == "admin" && $pass == "ad1234")
+        echo "ยินดีต้อนรับคุณ ADMIN";
+     else if($id == "member" && $pass == "mem1234")
+        echo "ยินดีต้อนรับคุณ MEMBER";
+     else
+        echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
+    ?>
     </div>
+    <p style="text-align: center;"><a href="index2.php">กลับไปหน้าหลัก</a></p>
 </body>
 </html>

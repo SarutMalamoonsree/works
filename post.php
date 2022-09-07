@@ -13,13 +13,22 @@
     <h1 style="text-align: center;">MY WEBBOARD</h1>
     <hr>
     <div align = center>
-    ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?><br><br>
+    ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?><br>
+    <?php 
+    $oe = $_GET["id"]; 
+    if($oe % 2 ==0) 
+        echo "เป็นกระทู้หมายเลขคู่";
+    else
+        echo "เป็นกระทู้หมายเลขคี่";    
+    ?>
+    <br>
+    <br>
     <table style = "border:2px solid black; width:40%"align ="center">
            <tr><th colspan="2" >แสดงความคิดเห็น</th></tr>
            <td><textarea name="comment"  cols="80" rows="10" align ="center"></textarea></td></tr> 
            <tr><td colspan="2" align ="center"><input type="submit" value="ส่งข้อความ"></td></tr>        
     </table>
-    <p style="text-align: center;"><a href="index2.html">กลับไปหน้าหลัก</a></p>
+    <p style="text-align: center;"><a href="index2.php">กลับไปหน้าหลัก</a></p>
     </div>
 </body>
 </html>
