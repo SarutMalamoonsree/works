@@ -20,16 +20,10 @@
   
     <br>
     <ul>
-        <li><a href="post.php?id=1">กระทู้ที่ 1</a></li>
-        <li><a href="post.php?id=2">กระทู้ที่ 2</a></li>
-        <li><a href="post.php?id=3">กระทู้ที่ 3</a></li>
-        <li><a href="post.php?id=4">กระทู้ที่ 4</a></li>
-        <li><a href="post.php?id=5">กระทู้ที่ 5</a></li>
-        <li><a href="post.php?id=6">กระทู้ที่ 6</a></li>
-        <li><a href="post.php?id=7">กระทู้ที่ 7</a></li>
-        <li><a href="post.php?id=8">กระทู้ที่ 8</a></li>
-        <li><a href="post.php?id=9">กระทู้ที่ 9</a></li>
-        <li><a href="post.php?id=10">กระทู้ที่ 10</a></li>
+        <?php 
+        for($i = 1; $i<=10;$i++)
+        echo "<li><a href=post.php?id="."$i".">กระทู้ที่ ".$i."</a></li>";
+        ?>
    </ul>
 </body>
 </html>

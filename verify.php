@@ -21,6 +21,6 @@
         echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
     ?>
     </div>
-    <p style="text-align: center;"><a href="index2.php">กลับไปหน้าหลัก</a></p>
+    <p style="text-align: center;"><a href="index2.php">กลับไปยังหน้าหลัก</a></p>
 </body>
 </html>
