@@ -20,7 +20,8 @@
      else
         echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
     ?>
+     <br>
+    <a href="index2.php">กลับไปยังหน้าหลัก</a></p>
     </div>
-    <p style="text-align: center;"><a href="index2.php">กลับไปยังหน้าหลัก</a></p>
 </body>
 </html>
