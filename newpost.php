@@ -12,7 +12,7 @@
 ?>
 <body>
      ผู้ใช้ : <?php echo $_SESSION ['username'] ?>
-    <table style="border-collapse:collapse width:40%">
+    <table style="border-collapse:collapse">
     <tr><td>หมวดหมู่ :</td>
     <td><select name="หมวดหมู่">
             <option value="ทั้งหมด">--ทั้งหมด--</option>
