@@ -18,20 +18,38 @@ if(isset($_SESSION['id'])){
     </style>
 </head>
 <body>
+    <div class="container">
     <h1 style="text-align: center;">MY WEBBOARD</h1>
-    <hr>
-    <form action="verify.php" method="post">
-    <table style = "border: 2px solid black; width:40%"align ="center">
-        <tr><th colspan="2">เข้าสู่ระบบ</th></tr>
-        <tr><td>
-            <tr><td>Login</td>    
-            <td><input type="text" name="ID" size="35"><br></td></tr>
-            <tr><td>Password</td> 
-            <td><input type="password" name="Password" size="35"></td></tr>
-            <tr><td colspan="2" align ="center" ><input type="submit" value="Login"></td></tr>
-            </td></tr>
-    </table>
-</form>
-    <p style="text-align: center;">ถ้ายังไม่ได้สมัครสมาชิก <a href="register.php">กรุณาสมัครสมาชิก</a></p>
+    <?php include "nav.php";?>
+    <br>
+    <div class="row">
+        <div class="col md-4"></div>
+        <div class="col md-4">
+            <?php 
+            if(isset($_SESSION['error'])){
+                echo "<div class ='alert alert-danger'>ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง</div>";
+                unset($_SESSION['error']);
+            }?>
+            <div class = "card text-dark bg-light">
+                <div class="card-header">เข้าสู่ระบบ</div>
+                <div class="card-body">
+                    <form action="verify.php" method="post">
+                        <div class="form-group mb-2">
+                            <label class="form-label">login</label>
+                            <input type="text" name="ID" class="form-control">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label class="form-label">password</label>
+                            <input type="password" name="Password" class="form-control">
+                        </div>
+                        <center><button type="submit" class="btn btn-secondary btn-sm">Login</button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col md-4"></div>
+    </div>
+    <br><p style="text-align: center;">ถ้ายังไม่ได้สมัครสมาชิก <a href="register.php">กรุณาสมัครสมาชิก</a></p>
+    </div>
 </body>
 </html>

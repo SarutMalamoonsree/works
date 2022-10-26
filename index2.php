@@ -49,7 +49,7 @@
     <div class="container">
     <?php include "nav.php";?>
     <br>
-    <div class="d-flex">
+    <div class="d-flex justify-content-between">
         <div>
             <label>หมวดหมู่</label>
             <span class="dropdown">
@@ -62,21 +62,22 @@
                 </ul>
             </span>
         </div>
+        <div>
+        <a href="newpost.php" class="btn btn-success btn-sm"><i class="bi bi-plus"></i>สร้างกระทู้ใหม่</a>
+        </div>
     </div>
-        <a href="newpost.php" style="float:right;">สร้างกระทู้ใหม่</a>
+        
     <br>
-    <ul> 
+    <table class="table table-striped">
         <?php 
         for($i = 1; $i<=10;$i++){
-        echo "<li>";
-        echo "<a href=post.php?id="."$i".">กระทู้ที่ ".$i."</a>";
-        if ($_SESSION['role']=='a'){
-        echo "&nbsp;&nbsp;&nbsp;<a href=delete.php?id="."$i".">ลบ</a>";
-        }
-        echo "</li>";
-        }
+        echo "<tr><td><a href=post.php?id="."$i"." style=text-decoration:none>กระทู้ที่ ".$i."</a></td>";
+        if ($_SESSION['role']== 'a'){
+            echo  "<td><a href=delete.php?id=$i class='btn btn-danger btn-sm'><i class='bi bi-trash'></i></a></td>";}
+        echo "</tr>";
+    }
         ?>
-   </ul>
+   </table>
    </div>
 </body>
 <?php 
