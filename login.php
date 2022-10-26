@@ -23,8 +23,8 @@ if(isset($_SESSION['id'])){
     <?php include "nav.php";?>
     <br>
     <div class="row">
-        <div class="col md-4"></div>
-        <div class="col md-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
             <?php 
             if(isset($_SESSION['error'])){
                 echo "<div class ='alert alert-danger'>ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง</div>";
@@ -36,18 +36,18 @@ if(isset($_SESSION['id'])){
                     <form action="verify.php" method="post">
                         <div class="form-group mb-2">
                             <label class="form-label">login</label>
-                            <input type="text" name="ID" class="form-control">
+                            <input type="text" name="login" class="form-control">
                         </div>
                         <div class="form-group mb-2">
                             <label class="form-label">password</label>
-                            <input type="password" name="Password" class="form-control">
+                            <input type="password" name="pwd" class="form-control">
                         </div>
                         <center><button type="submit" class="btn btn-secondary btn-sm">Login</button></center>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="col md-4"></div>
+        <div class="col-md-4"></div>
     </div>
     <br><p style="text-align: center;">ถ้ายังไม่ได้สมัครสมาชิก <a href="register.php">กรุณาสมัครสมาชิก</a></p>
     </div>

@@ -4,8 +4,8 @@ if(isset($_SESSION['id'])){
     die();
 }?>
 <?php 
-     $id = $_POST["ID"]; 
-     $pass = $_POST["Password"];
+     $id = $_POST["login"]; 
+     $pass = $_POST["pwd"];
      if($id == "admin" && $pass == "ad1234"){
         $_SESSION ['username']='admin';
         $_SESSION ['role']='a';
